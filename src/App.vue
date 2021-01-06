@@ -14,7 +14,8 @@ export default {
     }
   },
   mounted(){
-    axios.get('http://121.36.36.62:3000/api/users').then(res=>{
+    // 此处等于 http://121.36.36.62:3000/api/users
+    axios.get('/api/users').then(res=>{
       console.log(res)
       this.users = res.data
       console.log('构建')
